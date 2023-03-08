@@ -6,10 +6,12 @@ import jakarta.servlet.*;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import util.*;
-
+import etu1785.framework.*;
+import java.util.HashMap;
 
 
 public class FrontServlet extends HttpServlet {
+   HashMap<String,Mapping>  MappingUrls= new HashMap<String,Mapping>();
    public void processRequest(HttpServletRequest request,HttpServletResponse res)
          throws ServletException, IOException {
             res.setContentType("text/html;charset=UTF-8");
